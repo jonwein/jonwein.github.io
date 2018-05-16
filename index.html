@@ -16,27 +16,22 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <body>
 
 <!-- Navbar -->
-<div id="myDIV">
 <div class="w3-bar w3-black w3-mobile">
 <div class="w3-bar w3-black w3-topmiddle">
-  <a href="index" class="w3-bar-item w3-button active" style="width:25%">Home</a>
+  <a href="index" class="w3-bar-item w3-button" style="width:25%">Home</a>
   <a href="about" class="w3-bar-item w3-button" style="width:25%">About</a>
   <a href="work" class="w3-bar-item w3-button" style="width:25%">Work</a>
   <a href="projects" class="w3-bar-item w3-button" style="width:25%">Projects</a>
 </div>
 </div>
-</div>
-  
-<script>
-var header = document.getElementById("myDIV");
-var btns = header.getElementsByClassName("w3-bar w3-black w3-topmiddle");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('ul li a').click(function(){
+      $('li a').removeClass("active");
+      $(this).addClass("active");
+    });
   });
-}
 </script>
 
 <center>
