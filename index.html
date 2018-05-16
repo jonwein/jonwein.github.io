@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jon Wein</title>
+	<title>Jon Wein</title>
 	
-    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
 		
 	<style>
         
@@ -43,6 +43,7 @@
 		
 	body {font-family: Arial}
 	*{box-sizing: border-box;}
+		
 	/* The browser window */
 	.container {
     		margin-top: 5%;
@@ -62,6 +63,7 @@
 	    border-top-left-radius: 4px;
 	    border-top-right-radius: 4px;
 	}
+		
 	/* Create three unequal columns that floats next to each other */
 	.column {float: left;}
 	.left {width: 20%;}
@@ -73,6 +75,7 @@
 	    display: table;
 	    clear: both;
 	}
+		
 	/* Three dots */
 	.dot {
 	    margin-top: 4px;
@@ -82,6 +85,7 @@
 	    border-radius: 50%;
 	    display: inline-block;
 	}
+		
 	/* Style the input field */
 	input[type=text] {
 	    width: 100%;
@@ -93,6 +97,7 @@
 	    color: #666;
 	    padding: 5px;
 	}
+		
 	/* Three bars (hamburger menu) */
 	.bar {
 	    width: 17px;
@@ -101,6 +106,7 @@
 	    margin: 3px 0;
 	    display: block;
 	}
+		
 	/* Page content */
 	.content {padding: 10px;}
 		
@@ -138,31 +144,28 @@
   	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     
-    <script>
+	<script>
   		$( function() {
     		$( "#draggable" ).draggable();
   		} );
   	</script>
 
 	<div id="draggable" class="container">
-    
 		<div class="row">
 			<div class="column left">
 				<div id="menu">
-				 <ul>
-				  <li><a href="https://jonwein.github.io/projects" style="background:#ED594A;"></a></li>
-				  <li><a href="https://jonwein.github.io/work" style="background:#FDD800;"></a></li>
-				  <li><a href="https://jonwein.github.io/about" style="background:#5AC05A;"></a></li>
-				</ul> 
+					<ul>
+				 		<li><a href="https://jonwein.github.io/projects" style="background:#ED594A;"></a></li>
+				 		<li><a href="https://jonwein.github.io/work" style="background:#FDD800;"></a></li>
+				 		<li><a href="https://jonwein.github.io/about" style="background:#5AC05A;"></a></li>
+					</ul> 
 				</div>
 			</div>
 			
 			<div class="column middle">
-				
 				<form action="http://www.google.com/search" method="get">
-				    <input type="text" name="q" value="jonwein.github.io"/>
+					<input type="text" name="q" value="jonwein.github.io"/>
 				</form>
-
 			</div>
 			
 			<div class="column right">
@@ -174,9 +177,9 @@
 					</div>
 					
 					<script>
-					function myFunction(x) {
-						x.classList.toggle("change");
-					}
+						function myFunction(x) {
+							x.classList.toggle("change");
+						}
 					</script>
 				</div>
 			</div>
@@ -190,7 +193,6 @@
 			</center>
 		</div>
 	</div>
-    </div>
-
+</div>
 </body>
 </html> 
