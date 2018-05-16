@@ -7,6 +7,16 @@
 	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
 	
+	function checkURL (abc) {
+		var string = abc.value;
+
+		if (!~string.indexOf("http")) {
+			string = "http://" + string;
+		}
+		abc.value = string;
+		return abc
+	}
+	
 	<style>
 		
 	.barContainer {
@@ -165,7 +175,8 @@
 			<div class="column middle">
 				
 				<form>
-				<input type="url" value="https://jonwein.github.io" required aria-required="true" pattern="@(https?|ftp|torrent|image|irc)://(-\.)?([^\s/?\.#-]+\.?)+(/[^\s]*)?$@iS" name="url"/>
+  					<input type="url" name="someUrl" onblur="checkURL(this)" />
+  					<input type="text"/>
 				</form>
 
 			</div>
