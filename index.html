@@ -5,6 +5,16 @@
 	<title>Jon Wein</title>
 	<style>
 	body{background-color: #ddffff;}
+		
+	.fixed-ratio-resize { /* basic responsive img */
+		max-width: 100%;
+		height: auto;
+		width: auto\9; /* IE8 */
+	}
+		
+</style>
+
+<img class="fixed-ratio-resize" src="students.jpg" alt=""/>
 	</style>
 </head>
   
@@ -41,7 +51,7 @@
 			<p class="w3-text-blue"><b>home.zip</b></p>
 			<p>the personal website of...</p>
 			<p>Jonathan Wein</p>
-			<img src="me.JPG">
+			<img class="fixed-ratio-resize" src="me.JPG" alt=""/>
 			<p class="w3-text-blue">Show in folder</p>
 		</div>
 	</div>
