@@ -6,6 +6,8 @@
 	
 	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+		
+	<style>
 	
 	function checkURL (abc) {
 		var string = abc.value;
@@ -16,8 +18,6 @@
 		abc.value = string;
 		return abc
 	}
-	
-	<style>
 		
 	.barContainer {
 	    display: inline-block;
@@ -175,8 +175,7 @@
 			<div class="column middle">
 				
 				<form>
-  					<input type="url" name="someUrl" onblur="checkURL(this)" />
-  					<input type="text"/>
+  					<input type="url" name="someUrl" value="jonwein.github.io onblur="checkURL(this)" />
 				</form>
 
 			</div>
