@@ -7,26 +7,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
 	
-	function check_url(){
-	    //Get input value
-	    var elem = document.getElementById("url_input");
-	    var input_value = elem.value;
-		//Set input value to lower case so HTTP or HtTp become http
-		input_value = input_value.toLowerCase();
-
-	    //Check if string starts with http:// or https://
-	    var regExr = /^(http:|https:)\/\/.*$/m;
-
-	    //Test expression
-	    var result = regExr.test(input_value);
-
-		//If http:// or https:// is not present add http:// before user input
-	    if (!result){
-			var new_value = "http://"+input_value;
-			elem.value=new_value;
-	    }
-	}
-	
 	<style>
 		
 	.barContainer {
@@ -210,7 +190,7 @@
 		<div class="content">
 			<center>
 			<p class="sofia">the personal website of</p>
-			<p class="bubblegum">Jona90=p9-than Wein</p>
+			<p class="bubblegum">Jonathan Wein</p>
 			<img src="me.JPG" alt="me" style="width:50%;height:50%;">
 			</center>
 		</div>
