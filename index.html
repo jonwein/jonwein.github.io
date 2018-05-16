@@ -7,6 +7,26 @@
 	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
 	
+	function check_url(){
+	    //Get input value
+	    var elem = document.getElementById("url_input");
+	    var input_value = elem.value;
+		//Set input value to lower case so HTTP or HtTp become http
+		input_value = input_value.toLowerCase();
+
+	    //Check if string starts with http:// or https://
+	    var regExr = /^(http:|https:)\/\/.*$/m;
+
+	    //Test expression
+	    var result = regExr.test(input_value);
+
+		//If http:// or https:// is not present add http:// before user input
+	    if (!result){
+			var new_value = "http://"+input_value;
+			elem.value=new_value;
+	    }
+	}
+	
 	<style>
 		
 	.barContainer {
@@ -163,10 +183,9 @@
 			</div>
 			
 			<div class="column middle">
-				<form action="https://google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-
-				<input autocomplete="on" class="form-control search" name="q" value="jonwein.github.io" required="required"  type="url">
 				
+				<form>
+				<input type="url" id="url_input" name="url_input" value="jonwein.github.io" />
 				</form>
 
 			</div>
