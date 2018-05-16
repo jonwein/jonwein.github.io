@@ -8,16 +8,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
 		
 	<style>
-	
-	function checkURL (abc) {
-		var string = abc.value;
-
-		if (!~string.indexOf("http")) {
-			string = "http://" + string;
-		}
-		abc.value = string;
-		return abc
-	}
 		
 	.barContainer {
 	    display: inline-block;
@@ -175,7 +165,8 @@
 			<div class="column middle">
 				
 				<form>
-  					<input type="url" name="someUrl" value="jonwein.github.io onblur="checkURL(this)" />
+  					<label for="url"></label>
+					<input type="url" required aria-required="true" pattern="^(https?://)?([a-zA-Z0-9]([a-zA-ZäöüÄÖÜ0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,6}$" name="url" value="jonwein.github.io/>
 				</form>
 
 			</div>
