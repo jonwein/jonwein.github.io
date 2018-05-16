@@ -117,6 +117,17 @@
 
 	/* Page content */
 	.content {padding: 10px;}
+		
+		#menu ul {list-style-type: none; padding: 0; margin: 0;}
+#menu li {display: inline-block;}
+#menu a {
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    border: 1px #a2a2a2 solid;
+    text-align: center;
+}
 
 	</style>
 </head>
@@ -142,9 +153,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="column left">
-				<span class="dot" style="background:#ED594A;"></span>
-				<span class="dot" style="background:#FDD800;"></span>
-				<span class="dot" style="background:#5AC05A;"></span>
+				<div id="menu">
+ <ul>
+  <li><a href="#" style="background:#ED594A;"></a></li>
+  <li><a href="#" style="background:#FDD800;"></a></li>
+  <li><a href="#" style="background:#5AC05A;"></a></li>
+</ul> 
+</div>
 			</div>
 			
 			<div class="column middle">
