@@ -50,6 +50,7 @@
     		margin-right: 15%;
     		margin-left: 15%;
 		padding-bottom: 1%;
+        resize
     		border: 3px solid #f1f1f1;
     		border-top-left-radius: 4px;
     		border-top-right-radius: 4px;
@@ -141,12 +142,12 @@
     
     <script>
   		$( function() {
-    		$( "#draggable" ).draggable();
+    		$( "#draggable" ).draggable().resizable();
   		} );
   	</script>
-
-	<div id="draggable" class="container">
     
+    <div id="draggable" class="container">
+
 		<div class="row">
 			<div class="column left">
 				<div id="menu">
