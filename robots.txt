@@ -1,5 +1,10 @@
 User-agent: *
 Disallow: /art/admin/
 Disallow: /art/search/
+# Sign-in and sign-up, and the signed-in settings behind them. Every artwork page
+# links to /art/accounts/login/?next=<that page>, so a crawler that follows them
+# walks ~400,000 sign-in pages: ClaudeBot made ~140,000 such requests on
+# 2026-11-26 and took the Worker past its 100,000-a-day free limit.
+Disallow: /art/accounts/
 
 Sitemap: https://jonwein.com/art/sitemap.xml
